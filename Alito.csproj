@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -86,17 +87,28 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Classes\BotLogic.cs" />
     <Compile Include="Classes\Entities\AllExams.cs" />
+    <Compile Include="Classes\Entities\DBJSON.cs" />
     <Compile Include="Classes\Entities\Exam.cs" />
     <Compile Include="Classes\Entities\Subject.cs" />
-    <Compile Include="Classes\Entities\User\Pet.cs" />
-    <Compile Include="Classes\Entities\User\StatExam.cs" />
-    <Compile Include="Classes\Entities\User\StatSubject.cs" />
+    <Compile Include="Classes\Entities\UserClasses\Pet.cs" />
+    <Compile Include="Classes\Entities\UserClasses\SelectedTest.cs" />
+    <Compile Include="Classes\Entities\UserClasses\StatExam.cs" />
+    <Compile Include="Classes\Entities\UserClasses\StatSubject.cs" />
     <Compile Include="Classes\Entities\Tasks\CompleteTask.cs" />
     <Compile Include="Classes\Entities\Tasks\Task.cs" />
     <Compile Include="Classes\Entities\Tasks\TaskVariable.cs" />
-    <Compile Include="Classes\Entities\User\User.cs" />
-    <Compile Include="Classes\Entities\User\UserStatistic.cs" />
+    <Compile Include="Classes\Entities\UserClasses\User.cs" />
+    <Compile Include="Classes\Entities\UserClasses\UserStatistic.cs" />
+    <Compile Include="Classes\Helpers\JSONHelper.cs" />
+    <Compile Include="Classes\JSONController.cs" />
+    <Compile Include="Classes\Entities\USERCLASSE\Pet.cs" />
+    <Compile Include="Classes\Entities\USERCLASSE\SelectedTest.cs" />
+    <Compile Include="Classes\Entities\USERCLASSE\StatExam.cs" />
+    <Compile Include="Classes\Entities\USERCLASSE\StatSubject.cs" />
+    <Compile Include="Classes\Entities\USERCLASSE\ClassUser.cs" />
+    <Compile Include="Classes\Entities\USERCLASSE\UserStatistic.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

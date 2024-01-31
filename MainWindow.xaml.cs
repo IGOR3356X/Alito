@@ -1,22 +1,17 @@
-﻿using System.Windows;
-using Telegram.Bot;
-using Telegram.Bot.Polling;
+﻿using Alito.Classes;
+using Alito.Classes.Helpers;
+using System.Windows;
 
 namespace Alito
 {
-
-
     public partial class MainWindow : Window
     {
-        private static ITelegramBotClient _botClient;
-        private static ReceiverOptions _receiverOptions;
+        internal BotLogic bot;
         public MainWindow()
         {
             InitializeComponent();
-            _botClient = new TelegramBotClient("6719677792:AAHNkG5A943qr_if48dwEd0sLP8NmLut0zI");
-
+            var bot = new BotLogic();
+            var json = new JSONHelper();
         }
-        
-
     }
 }
