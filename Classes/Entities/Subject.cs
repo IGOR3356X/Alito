@@ -1,24 +1,12 @@
-﻿using Alito.Classes.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using System.Web;
-using System.Windows.Controls;
 
-namespace Alito.Class
+namespace Alito.Classes.Entities
 {
-    internal class Subject
+    internal class DBSubject
     {
-        public class OGE
-        {
-            public string TasksOGE;
-        }
-
-        public class EGE
-        {
-            public string TasksEGE;
-        }
+        public int ID;
+        public string Name;
+        public List<Task> Tasks;
     }
 }
