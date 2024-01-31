@@ -2,8 +2,8 @@
 
 namespace Alito.Classes.Entities
 {
-    internal class Exam
+    internal class StatExam
     {
-        public List<DBSubject> Subjects;
+        public List<StatSubject> Subjects;
     }
 }
